@@ -32,8 +32,8 @@ public class CricketTournament {
 
     CricketTournament() throws IOException {
         r = new Random(System.currentTimeMillis());
-        String commentaryFileName = CricketTournament.cricketProperties.properties.getProperty("commentaryFileName");
-        String scoreCardFileName = CricketTournament.cricketProperties.properties.getProperty("scoreCardFileName");
+        String commentaryFileName = cricketProperties.properties.getProperty("commentaryFileName");
+        String scoreCardFileName = cricketProperties.properties.getProperty("scoreCardFileName");
         commentaryFile = new FileWriter(commentaryFileName,false);
         scoreFile = new FileWriter(scoreCardFileName,false);
     }
