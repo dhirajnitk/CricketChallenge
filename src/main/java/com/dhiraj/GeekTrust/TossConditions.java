@@ -67,7 +67,7 @@ public class TossConditions {
         return instance;
     }
 
-    static String getTossResult(Teams teams, String ... inputs){
+    String getTossResult(Teams teams, String ... inputs){
         String outputFormat = "%s wins toss and %s";
         int tossResult = TossConditions.getInstance().evaluateToss(teams, inputs);
         return String.format(outputFormat, teams.toString(),  TossType.values()[tossResult].name().toLowerCase());
